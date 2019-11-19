@@ -84,14 +84,6 @@ console.log(pow(3, 4))
             of a and b
 */
 
-// const multiply = (a, b) => {
-//     if (a || b == 0) {
-//         return 0;
-//     } else {
-//     // if (a || b === 1) return 1;
-//     return a * multiply(a, b - 1)
-//     }
-// }
 const multiply = (a, b) => {
     if (a === 0) {
         return 0;
@@ -113,6 +105,15 @@ console.log(multiply(2,3))
         - recursively reverse a string
 */
 
+const reverse = str => {
+    if(str === ""){
+        return ""
+    } else {
+        return reverse(str.substr(1)) + str[0]
+    }
+}
+
+console.log(reverse("Danielle"))
 /*  7
     @function isPalindrome
     @param s {string}
@@ -120,6 +121,17 @@ console.log(multiply(2,3))
     @description:
         - recursively determine if a string is a palindrome
 */
+
+const isPlaindrome = str => {
+    if(str === ""){
+        return false
+    if(str[0] === str[str.length -1]){
+        return str.
+    }
+    } else {
+    
+    }
+}
 
 
 /*  8
@@ -130,6 +142,7 @@ console.log(multiply(2,3))
     @description:
         - recursively implement map
 */
+
 
 
 /*  9
